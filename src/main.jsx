@@ -5,6 +5,9 @@ import Route from './components/Routers/Route.jsx'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
+import './App.css'
+import Vehicels from './pages/Vehicels.jsx'
+import Details from './pages/Details.jsx'
 
 const router = createBrowserRouter(
   [
@@ -13,8 +16,16 @@ const router = createBrowserRouter(
       element: <Route />,
       children: [
         {
-          path: '/home',
+          path: '',
           element: <Home />
+        },
+        {
+          path: '/vehicels',
+          element: <Vehicels/>
+        },
+        {
+          path: '/details',
+          element: <Details/>
         },
         {
           path: '/about',
